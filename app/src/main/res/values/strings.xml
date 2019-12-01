@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2018 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <string name="product_version" translatable="false" tools:ignore="UnusedResources">0.4.1</string>
+    <string name="title_activity_bot_nav">BotNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_share">Share</string>
+    <string name="title_account">Account</string>
+</resources>
