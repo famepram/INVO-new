@@ -595,7 +595,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                 true);
 
         ViewGroup rootView = (ViewGroup) getWindow().getDecorView().getRootView();
-        mCompositorViewHolder = (CompositorViewHolder) findViewById(R.id.compositor_view_holder);
+        mCompositorViewHolder = findViewById(R.id.compositor_view_holder);
         // If the UI was inflated on a background thread, then the CompositorView may not have been
         // fully initialized yet as that may require the creation of a handler which is not allowed
         // outside the UI thread. This call should fully initialize the CompositorView if it hasn't
@@ -1483,6 +1483,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
         // to setup.
         mPageViewTimer = createPageViewTimer();
 
+
         if (supportsContextualSuggestionsBottomSheet()
                 && FeatureUtilities.areContextualSuggestionsEnabled(this)) {
             ViewGroup coordinator = findViewById(R.id.coordinator);
@@ -1896,6 +1897,8 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             mContextualSearchManager.initialize(contentContainer);
             mContextualSearchManager.setSearchContentViewDelegate(layoutManager);
         }
+
+
 
         layoutManager.addSceneChangeObserver(this);
         mCompositorViewHolder.setLayoutManager(layoutManager);

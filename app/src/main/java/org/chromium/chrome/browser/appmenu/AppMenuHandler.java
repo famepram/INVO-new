@@ -54,7 +54,7 @@ public class AppMenuHandler {
             int menuResourceId) {
         mActivity = activity;
         mDelegate = delegate;
-        mObservers = new ArrayList<AppMenuObserver>();
+        mObservers = new ArrayList<>();
         mMenuResourceId = menuResourceId;
         mHardwareButtonMenuAnchor = activity.findViewById(R.id.menu_anchor_stub);
         assert mHardwareButtonMenuAnchor != null

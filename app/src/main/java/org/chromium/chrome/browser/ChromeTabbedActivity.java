@@ -639,6 +639,7 @@ public class ChromeTabbedActivity
             }
 
             super.finishNativeInitialization();
+            Log.d("TAG","RIGHT HERE ");
         } finally {
             TraceEvent.end("ChromeTabbedActivity.finishNativeInitialization");
         }
